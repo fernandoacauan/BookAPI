@@ -1,0 +1,8 @@
+services:
+  SQL_2019:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "Pass@word"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"

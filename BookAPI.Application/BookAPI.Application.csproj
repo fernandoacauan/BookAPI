@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="AppLog/"/>
+    <Folder Include="DTOs/Book/"/>
+    <Folder Include="Mapping/"/>
+    <Folder Include="Mapping/Author/"/>
+    <Folder Include="Mapping/Book/"/>
+    <Folder Include="Responses/"/>
+    <Folder Include="Service/"/>
+    <Folder Include="UseCaseImplementation/"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1"/>
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0"/>
+    <PackageReference Include="AutoMapper" Version="12.0.1"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../BookAPI.Domain/BookAPI.Domain.csproj"/>
+  </ItemGroup>
+</Project>
